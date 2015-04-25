@@ -10,4 +10,5 @@ app.io.route('drawClick', function(req) {
 app.get('/', function(req, res) {
     res.sendfile(__dirname + '/public/client.html')
 })
+app.set('port', process.env.PORT || 3000);
 app.listen(app.get('port'));
